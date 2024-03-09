@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <img id="uno"  src="img1.jpeg"> 
+    <img  id="dos"  src="img2.jpeg">    
+    <button onclick="img()">BACK</button>
+    <button onclick="img2()">NEXT</button>
+    <script>
+        var uno = document.getElementById("uno");
+        var dos = document.getElementById("dos");
+        function img()
+        {
+            uno.style.display = "block";
+            dos.style.display = "none"; 
+        }
+        function img2()
+        {
+            uno.style.display = "none";
+            dos.style.display = "block";
+        }
+    </script>
+</body>
+</html>
